@@ -1,0 +1,15 @@
+ elif (n=='PRINTO'):
+       
+        
+        pergjigjja=d[1]
+        p=pergjigjja.encode("UTF-8")
+        connectionSocket.send(p)
+        
+        
+ elif (m=='TIME'):
+        sot=str(datetime.datetime.today())
+   
+        tani=str(datetime.time())
+        ora=sot + tani
+        Tora=ora.encode("UTF-8")
+        connectionSocket.send(Tora)
